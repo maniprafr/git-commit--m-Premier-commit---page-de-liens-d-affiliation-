@@ -180,6 +180,24 @@
             border-color: rgba(102, 126, 234, 0.3);
         }
 
+        .product-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .affiliate-link:hover .product-logo {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
         .link-title {
             font-weight: 600;
             color: #e2e8f0;
@@ -280,6 +298,12 @@
             .container {
                 padding: 1rem;
             }
+
+            .link-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
         }
 
         /* Animation delays pour les catégories */
@@ -315,32 +339,33 @@
         </header>
 
         <div class="categories">
-            <!-- Catégorie Productivité & Outils -->
+            <!-- Catégorie CLEM Tech -->
             <div class="category">
                 <h2 class="category-title">
                     <div class="category-icon">⚡</div>
                     CLEM Tech
                 </h2>
                 <div class="links">
-                    <a href="https://www.amazon.fr/Clem-Tech-Adaptateurs-Convertisseur-Smartphones/dp/B0DY7XKMMQ/ref=sr_1_8?crid=2E41DYTU1ACTV&dib=eyJ2IjoiMSJ9.hORGYBgOvupwp8NgQYsAf73OU3Rn2ARDhKOMdxfCo9PtvpaX8gCjLhgrM_iyyPCd_j6YOA_lvPU9DjP11sftYT7xOIjpvC0r86vVx9xPh1nZehaZueTHJfBpQZ8KfhtEmwtJoTkPgGuUEhqT7lr1xyPHtlXIhzKOquToC0TwCy4KMtNetbs5xIG6iFKNpoCty6WHLef6p3O0nFK83B9XSLPTwBHZMdJdL9lifSn-be2ud2SBoL5-UGCDcfs6TZK_ocQQtY_TNzgpBC2zI9nb3oH45HQ5DD6lNqUbhtb0hN0.0VMHsGOm7IrwrfPhhmUnd1nys9_vM1-LgmbATdNbL18&dib_tag=se&keywords=adaptateur+usb+c+vers+usb&qid=1749585814&sprefix=adap%2Caps%2C97&sr=8-8">
-                        <div class="link-title">Adaptateur usb c vers usb</div>
+                    <a href="https://www.amazon.fr/Clem-Tech-Adaptateurs-Convertisseur-Smartphones/dp/B0DY7XKMMQ/ref=sr_1_8?crid=2E41DYTU1ACTV&dib=eyJ2IjoiMSJ9.hORGYBgOvupwp8NgQYsAf73OU3Rn2ARDhKOMdxfCo9PtvpaX8gCjLhgrM_iyyPCd_j6YOA_lvPU9DjP11sftYT7xOIjpvC0r86vVx9xPh1nZehaZueTHJfBpQZ8KfhtEmwtJoTkPgGuUEhqT7lr1xyPHtlXIhzKOquToC0TwCy4KMtNetbs5xIG6iFKNpoCty6WHLef6p3O0nFK83B9XSLPTwBHZMdJdL9lifSn-be2ud2SBoL5-UGCDcfs6TZK_ocQQtY_TNzgpBC2zI9nb3oH45HQ5DD6lNqUbhtb0hN0.0VMHsGOm7IrwrfPhhmUnd1nys9_vM1-LgmbATdNbL18&dib_tag=se&keywords=adaptateur+usb+c+vers+usb&qid=1749585814&sprefix=adap%2Caps%2C97&sr=8-8" class="affiliate-link" target="_blank">
+                        <img src="images/adaptateur-usbc.jpg" alt="Adaptateur USB-C" class="product-logo">
+                        <div class="link-title">Adaptateur USB-C vers USB</div>
                         <div class="link-description">
-                            Lot de 3 Adaptateurs USB C vers USB Convertisseur Type-C Femelle vers USBA Mâle 2.0 Charge Rapide Compatible Tous Smartphones, PC, Tablettes.
+                            Lot de 3 Adaptateurs USB-C vers USB. Convertisseur Type-C Femelle vers USB-A Mâle 2.0 Charge Rapide. Compatible avec tous Smartphones, PC, Tablettes.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">-20% avec ce lien</span>
-                            <span class="commission">Commission: 50%</span>
+                            <span class="discount">Livraison Prime</span>
+                            <span class="commission">Amazon Partenaire</span>
                         </div>
                     </a>
                     
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">Canva Pro - Design facile</div>
+                        <div class="link-title">Autres produits CLEM Tech</div>
                         <div class="link-description">
-                            Créez des visuels professionnels en quelques clics. Indispensable pour vos réseaux sociaux et présentations.
+                            Découvrez prochainement d'autres produits tech sélectionnés par CLEM Provence pour optimiser votre quotidien numérique.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">Essai gratuit 45 jours</span>
-                            <span class="commission">Commission: 40%</span>
+                            <span class="discount">Bientôt disponible</span>
+                            <span class="commission">À venir</span>
                         </div>
                     </a>
                 </div>
@@ -354,86 +379,86 @@
                 </h2>
                 <div class="links">
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">Skillshare Premium</div>
+                        <div class="link-title">Formations en ligne</div>
                         <div class="link-description">
-                            Milliers de cours créatifs : design, business, technologie. La plateforme que j'utilise pour me former continuellement.
+                            Plateformes de formation recommandées pour développer vos compétences numériques et techniques.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">2 mois gratuits</span>
-                            <span class="commission">Commission: 60%</span>
+                            <span class="discount">Prochainement</span>
+                            <span class="commission">En préparation</span>
                         </div>
                     </a>
                     
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">MasterClass</div>
+                        <div class="link-title">Ressources éducatives</div>
                         <div class="link-description">
-                            Apprenez auprès des meilleurs dans leur domaine. Cours de haute qualité avec des experts mondiaux.
+                            Livres, guides et ressources pour approfondir vos connaissances dans le domaine tech.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">-30% annuel</span>
-                            <span class="commission">Commission: 45%</span>
+                            <span class="discount">Sélection qualité</span>
+                            <span class="commission">Bientôt</span>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <!-- Catégorie Tech & Développement -->
+            <!-- Catégorie Outils & Logiciels -->
             <div class="category">
                 <h2 class="category-title">
                     <div class="category-icon">💻</div>
-                    Tech & Développement
+                    Outils & Logiciels
                 </h2>
                 <div class="links">
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">GitHub Pro</div>
+                        <div class="link-title">Logiciels productivité</div>
                         <div class="link-description">
-                            Hébergement de code professionnel avec des fonctionnalités avancées. Essentiel pour tout développeur.
+                            Les meilleurs outils pour optimiser votre productivité et organiser votre travail efficacement.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">1er mois gratuit</span>
-                            <span class="commission">Commission: 25%</span>
+                            <span class="discount">Versions d'essai</span>
+                            <span class="commission">En cours</span>
                         </div>
                     </a>
                     
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">Figma Professional</div>
+                        <div class="link-title">Applications mobiles</div>
                         <div class="link-description">
-                            L'outil de design collaboratif de référence. Parfait pour créer des interfaces et prototypes.
+                            Sélection d'applications mobiles indispensables pour votre smartphone et tablette.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">-15% sur l'année</span>
-                            <span class="commission">Commission: 35%</span>
+                            <span class="discount">Freemium disponible</span>
+                            <span class="commission">À venir</span>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <!-- Catégorie Business & Marketing -->
+            <!-- Catégorie Services & Abonnements -->
             <div class="category">
                 <h2 class="category-title">
                     <div class="category-icon">📈</div>
-                    Business & Marketing
+                    Services & Abonnements
                 </h2>
                 <div class="links">
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">ConvertKit</div>
+                        <div class="link-title">Services cloud</div>
                         <div class="link-description">
-                            La meilleure solution d'email marketing pour créateurs. Interface intuitive et automatisations puissantes.
+                            Solutions de stockage et services cloud pour sécuriser et synchroniser vos données.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">Essai gratuit étendu</span>
-                            <span class="commission">Commission: 30%</span>
+                            <span class="discount">Stockage gratuit</span>
+                            <span class="commission">Partenariats</span>
                         </div>
                     </a>
                     
                     <a href="#" class="affiliate-link">
-                        <div class="link-title">Shopify</div>
+                        <div class="link-title">Abonnements premium</div>
                         <div class="link-description">
-                            Créez votre boutique en ligne facilement. La solution e-commerce la plus populaire au monde.
+                            Services premium et abonnements qui valent le détour pour améliorer votre expérience numérique.
                         </div>
                         <div class="link-meta">
-                            <span class="discount">14 jours gratuits</span>
-                            <span class="commission">Commission: 20%</span>
+                            <span class="discount">Offres spéciales</span>
+                            <span class="commission">Négociés</span>
                         </div>
                     </a>
                 </div>
@@ -442,12 +467,12 @@
 
         <div class="disclaimer">
             <strong>🔍 Transparence totale :</strong> 
-            Cette page contient des liens d'affiliation. Cela signifie que je peux recevoir une commission si vous achetez via mes liens, sans coût supplémentaire pour vous. Je ne recommande que les outils que j'utilise personnellement et en lesquels j'ai confiance. Votre confiance est ma priorité.
+            Cette page contient des liens d'affiliation. Cela signifie que je peux recevoir une commission si vous achetez via mes liens, sans coût supplémentaire pour vous. Je ne recommande que les outils et produits que j'utilise personnellement et en lesquels j'ai confiance. Votre confiance est ma priorité.
         </div>
 
         <footer class="footer">
             <p class="footer-text">
-                Des questions sur ces outils ? N'hésitez pas à me contacter !
+                Des questions sur ces produits ou suggestions ? N'hésitez pas à me contacter !
             </p>
             <div class="social-links">
                 <a href="#" class="social-link" title="Twitter">🐦</a>
