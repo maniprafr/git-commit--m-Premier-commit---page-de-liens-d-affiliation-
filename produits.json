@@ -1,0 +1,110 @@
+{
+  "siteInfo": {
+    "titre": "CLEM Pro",
+    "sousTitre": "Découvrez les outils et services que j'utilise au quotidien et que je recommande à ma communauté. Chaque lien a été soigneusement sélectionné pour sa qualité et son utilité.",
+    "stats": {
+      "outils": "25+",
+      "membres": "1000+",
+      "satisfaction": "98%"
+    }
+  },
+  "categories": {
+    "clemtech": {
+      "nom": "CLEM Tech",
+      "icone": "⚡",
+      "produits": {
+        "adaptateur-usbc": {
+          "titre": "Adaptateur USB-C vers USB",
+          "description": "Lot de 3 Adaptateurs USB-C vers USB. Convertisseur Type-C Femelle vers USB-A Mâle 2.0 Charge Rapide. Compatible avec tous Smartphones, PC, Tablettes.",
+          "lien": "https://www.amazon.fr/Clem-Tech-Adaptateurs-Convertisseur-Smartphones/dp/B0DY7XKMMQ/ref=sr_1_8?crid=2E41DYTU1ACTV&dib=eyJ2IjoiMSJ9.hORGYBgOvupwp8NgQYsAf73OU3Rn2ARDhKOMdxfCo9PtvpaX8gCjLhgrM_iyyPCd_j6YOA_lvPU9DjP11sftYT7xOIjpvC0r86vVx9xPh1nZehaZueTHJfBpQZ8KfhtEmwtJoTkPgGuUEhqT7lr1xyPHtlXIhzKOquToC0TwCy4KMtNetbs5xIG6iFKNpoCty6WHLef6p3O0nFK83B9XSLPTwBHZMdJdL9lifSn-be2ud2SBoL5-UGCDcfs6TZK_ocQQtY_TNzgpBC2zI9nb3oH45HQ5DD6lNqUbhtb0hN0.0VMHsGOm7IrwrfPhhmUnd1nys9_vM1-LgmbATdNbL18&dib_tag=se&keywords=adaptateur+usb+c+vers+usb&qid=1749585814&sprefix=adap%2Caps%2C97&sr=8-8",
+          "image": "images/adaptateur-usbc.jpg",
+          "badge": "Livraison Prime",
+          "commission": "Amazon Partenaire"
+        },
+        "autre-produit": {
+          "titre": "Autres produits CLEM Tech",
+          "description": "Découvrez prochainement d'autres produits tech sélectionnés par CLEM Provence pour optimiser votre quotidien numérique.",
+          "lien": "#",
+          "image": "",
+          "badge": "Bientôt disponible",
+          "commission": "À venir"
+        }
+      }
+    },
+    "formation": {
+      "nom": "Formation & Éducation",
+      "icone": "📚",
+      "produits": {
+        "formations-en-ligne": {
+          "titre": "Formations en ligne",
+          "description": "Plateformes de formation recommandées pour développer vos compétences numériques et techniques.",
+          "lien": "#",
+          "image": "",
+          "badge": "Prochainement",
+          "commission": "En préparation"
+        },
+        "ressources-educatives": {
+          "titre": "Ressources éducatives",
+          "description": "Livres, guides et ressources pour approfondir vos connaissances dans le domaine tech.",
+          "lien": "#",
+          "image": "",
+          "badge": "Sélection qualité",
+          "commission": "Bientôt"
+        }
+      }
+    },
+    "outils": {
+      "nom": "Outils & Logiciels",
+      "icone": "💻",
+      "produits": {
+        "logiciels-productivite": {
+          "titre": "Logiciels productivité",
+          "description": "Les meilleurs outils pour optimiser votre productivité et organiser votre travail efficacement.",
+          "lien": "#",
+          "image": "",
+          "badge": "Versions d'essai",
+          "commission": "En cours"
+        },
+        "applications-mobiles": {
+          "titre": "Applications mobiles",
+          "description": "Sélection d'applications mobiles indispensables pour votre smartphone et tablette.",
+          "lien": "#",
+          "image": "",
+          "badge": "Freemium disponible",
+          "commission": "À venir"
+        }
+      }
+    },
+    "services": {
+      "nom": "Services & Abonnements",
+      "icone": "📈",
+      "produits": {
+        "services-cloud": {
+          "titre": "Services cloud",
+          "description": "Solutions de stockage et services cloud pour sécuriser et synchroniser vos données.",
+          "lien": "#",
+          "image": "",
+          "badge": "Stockage gratuit",
+          "commission": "Partenariats"
+        },
+        "abonnements-premium": {
+          "titre": "Abonnements premium",
+          "description": "Services premium et abonnements qui valent le détour pour améliorer votre expérience numérique.",
+          "lien": "#",
+          "image": "",
+          "badge": "Offres spéciales",
+          "commission": "Négociés"
+        }
+      }
+    }
+  },
+  "contact": {
+    "message": "Des questions sur ces produits ou suggestions ? N'hésitez pas à me contacter !",
+    "reseaux": {
+      "twitter": "#",
+      "linkedin": "#",
+      "email": "#",
+      "discord": "#"
+    }
+  }
+}

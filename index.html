@@ -281,6 +281,12 @@
             line-height: 1.6;
         }
 
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #a0aec0;
+        }
+
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2rem;
@@ -316,152 +322,30 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="hero-title">CLEM Provence</h1>
-            <p class="hero-subtitle">
-                Découvrez les outils et services que j'utilise au quotidien et que je recommande à ma communauté. 
-                Chaque lien a été soigneusement sélectionné pour sa qualité et son utilité.
+            <h1 class="hero-title" id="site-titre">CLEM Provence</h1>
+            <p class="hero-subtitle" id="site-sous-titre">
+                Chargement...
             </p>
             
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-number">25+</div>
+                    <div class="stat-number" id="stat-outils">--</div>
                     <div class="stat-label">Outils testés</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">1000+</div>
+                    <div class="stat-number" id="stat-membres">--</div>
                     <div class="stat-label">Membres</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">98%</div>
+                    <div class="stat-number" id="stat-satisfaction">--</div>
                     <div class="stat-label">Satisfaction</div>
                 </div>
             </div>
         </header>
 
-        <div class="categories">
-            <!-- Catégorie CLEM Tech -->
-            <div class="category">
-                <h2 class="category-title">
-                    <div class="category-icon">⚡</div>
-                    CLEM Tech
-                </h2>
-                <div class="links">
-                    <a href="https://www.amazon.fr/Clem-Tech-Adaptateurs-Convertisseur-Smartphones/dp/B0DY7XKMMQ/ref=sr_1_8?crid=2E41DYTU1ACTV&dib=eyJ2IjoiMSJ9.hORGYBgOvupwp8NgQYsAf73OU3Rn2ARDhKOMdxfCo9PtvpaX8gCjLhgrM_iyyPCd_j6YOA_lvPU9DjP11sftYT7xOIjpvC0r86vVx9xPh1nZehaZueTHJfBpQZ8KfhtEmwtJoTkPgGuUEhqT7lr1xyPHtlXIhzKOquToC0TwCy4KMtNetbs5xIG6iFKNpoCty6WHLef6p3O0nFK83B9XSLPTwBHZMdJdL9lifSn-be2ud2SBoL5-UGCDcfs6TZK_ocQQtY_TNzgpBC2zI9nb3oH45HQ5DD6lNqUbhtb0hN0.0VMHsGOm7IrwrfPhhmUnd1nys9_vM1-LgmbATdNbL18&dib_tag=se&keywords=adaptateur+usb+c+vers+usb&qid=1749585814&sprefix=adap%2Caps%2C97&sr=8-8" class="affiliate-link" target="_blank">
-                        <img src="images/adaptateur-usbc.jpg" alt="Adaptateur USB-C" class="product-logo">
-                        <div class="link-title">Adaptateur USB-C vers USB</div>
-                        <div class="link-description">
-                            Lot de 3 Adaptateurs USB-C vers USB. Convertisseur Type-C Femelle vers USB-A Mâle 2.0 Charge Rapide. Compatible avec tous Smartphones, PC, Tablettes.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Livraison Prime</span>
-                            <span class="commission">Amazon Partenaire</span>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Autres produits CLEM Tech</div>
-                        <div class="link-description">
-                            Découvrez prochainement d'autres produits tech sélectionnés par CLEM Provence pour optimiser votre quotidien numérique.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Bientôt disponible</span>
-                            <span class="commission">À venir</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catégorie Formation & Éducation -->
-            <div class="category">
-                <h2 class="category-title">
-                    <div class="category-icon">📚</div>
-                    Formation & Éducation
-                </h2>
-                <div class="links">
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Formations en ligne</div>
-                        <div class="link-description">
-                            Plateformes de formation recommandées pour développer vos compétences numériques et techniques.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Prochainement</span>
-                            <span class="commission">En préparation</span>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Ressources éducatives</div>
-                        <div class="link-description">
-                            Livres, guides et ressources pour approfondir vos connaissances dans le domaine tech.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Sélection qualité</span>
-                            <span class="commission">Bientôt</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catégorie Outils & Logiciels -->
-            <div class="category">
-                <h2 class="category-title">
-                    <div class="category-icon">💻</div>
-                    Outils & Logiciels
-                </h2>
-                <div class="links">
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Logiciels productivité</div>
-                        <div class="link-description">
-                            Les meilleurs outils pour optimiser votre productivité et organiser votre travail efficacement.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Versions d'essai</span>
-                            <span class="commission">En cours</span>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Applications mobiles</div>
-                        <div class="link-description">
-                            Sélection d'applications mobiles indispensables pour votre smartphone et tablette.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Freemium disponible</span>
-                            <span class="commission">À venir</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catégorie Services & Abonnements -->
-            <div class="category">
-                <h2 class="category-title">
-                    <div class="category-icon">📈</div>
-                    Services & Abonnements
-                </h2>
-                <div class="links">
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Services cloud</div>
-                        <div class="link-description">
-                            Solutions de stockage et services cloud pour sécuriser et synchroniser vos données.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Stockage gratuit</span>
-                            <span class="commission">Partenariats</span>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="affiliate-link">
-                        <div class="link-title">Abonnements premium</div>
-                        <div class="link-description">
-                            Services premium et abonnements qui valent le détour pour améliorer votre expérience numérique.
-                        </div>
-                        <div class="link-meta">
-                            <span class="discount">Offres spéciales</span>
-                            <span class="commission">Négociés</span>
-                        </div>
-                    </a>
-                </div>
+        <div class="categories" id="categories-container">
+            <div class="loading">
+                <p>Chargement des produits...</p>
             </div>
         </div>
 
@@ -471,19 +355,106 @@
         </div>
 
         <footer class="footer">
-            <p class="footer-text">
-                Des questions sur ces produits ou suggestions ? N'hésitez pas à me contacter !
+            <p class="footer-text" id="footer-message">
+                Chargement...
             </p>
-            <div class="social-links">
-                <a href="#" class="social-link" title="Twitter">🐦</a>
-                <a href="#" class="social-link" title="LinkedIn">💼</a>
-                <a href="#" class="social-link" title="Email">✉️</a>
-                <a href="#" class="social-link" title="Discord">💬</a>
+            <div class="social-links" id="social-links">
+                <!-- Les liens sociaux seront chargés dynamiquement -->
             </div>
         </footer>
     </div>
 
     <script>
+        // Chargement des données depuis le fichier JSON
+        async function chargerDonnees() {
+            try {
+                const response = await fetch('produits.json');
+                const data = await response.json();
+                
+                // Mise à jour des informations du site
+                document.getElementById('site-titre').textContent = data.siteInfo.titre;
+                document.getElementById('site-sous-titre').textContent = data.siteInfo.sousTitre;
+                document.getElementById('stat-outils').textContent = data.siteInfo.stats.outils;
+                document.getElementById('stat-membres').textContent = data.siteInfo.stats.membres;
+                document.getElementById('stat-satisfaction').textContent = data.siteInfo.stats.satisfaction;
+                
+                // Génération des catégories
+                genererCategories(data.categories);
+                
+                // Mise à jour du footer
+                document.getElementById('footer-message').textContent = data.contact.message;
+                genererLiensSociaux(data.contact.reseaux);
+                
+            } catch (error) {
+                console.error('Erreur lors du chargement des données:', error);
+                document.getElementById('categories-container').innerHTML = `
+                    <div class="loading">
+                        <p>⚠️ Erreur de chargement. Vérifiez que le fichier produits.json existe.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function genererCategories(categories) {
+            const container = document.getElementById('categories-container');
+            container.innerHTML = '';
+            
+            Object.entries(categories).forEach(([cle, categorie], index) => {
+                const categorieDiv = document.createElement('div');
+                categorieDiv.className = 'category';
+                categorieDiv.style.setProperty('--delay', `${index * 0.1}s`);
+                
+                categorieDiv.innerHTML = `
+                    <h2 class="category-title">
+                        <div class="category-icon">${categorie.icone}</div>
+                        ${categorie.nom}
+                    </h2>
+                    <div class="links">
+                        ${genererProduits(categorie.produits)}
+                    </div>
+                `;
+                
+                container.appendChild(categorieDiv);
+            });
+        }
+
+        function genererProduits(produits) {
+            return Object.entries(produits).map(([cle, produit]) => {
+                const imageHtml = produit.image ? 
+                    `<img src="${produit.image}" alt="${produit.titre}" class="product-logo">` : '';
+                
+                const target = produit.lien !== '#' ? 'target="_blank"' : '';
+                
+                return `
+                    <a href="${produit.lien}" class="affiliate-link" ${target}>
+                        ${imageHtml}
+                        <div class="link-title">${produit.titre}</div>
+                        <div class="link-description">${produit.description}</div>
+                        <div class="link-meta">
+                            <span class="discount">${produit.badge}</span>
+                            <span class="commission">${produit.commission}</span>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function genererLiensSociaux(reseaux) {
+            const container = document.getElementById('social-links');
+            const icones = {
+                twitter: '🐦',
+                linkedin: '💼', 
+                email: '✉️',
+                discord: '💬'
+            };
+            
+            container.innerHTML = Object.entries(reseaux).map(([reseau, lien]) => `
+                <a href="${lien}" class="social-link" title="${reseau}">
+                    ${icones[reseau] || '🔗'}
+                </a>
+            `).join('');
+        }
+
         // Animation d'apparition progressive des éléments
         const observerOptions = {
             threshold: 0.1,
@@ -499,13 +470,15 @@
             });
         }, observerOptions);
 
-        // Observer tous les liens d'affiliation pour les animations
-        document.querySelectorAll('.affiliate-link').forEach(link => {
-            link.style.opacity = '0';
-            link.style.transform = 'translateY(20px)';
-            link.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(link);
-        });
+        function initAnimations() {
+            // Observer tous les liens d'affiliation pour les animations
+            document.querySelectorAll('.affiliate-link').forEach(link => {
+                link.style.opacity = '0';
+                link.style.transform = 'translateY(20px)';
+                link.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(link);
+            });
+        }
 
         // Effet de particules subtil sur le background
         function createParticle() {
@@ -542,21 +515,30 @@
         `;
         document.head.appendChild(style);
 
-        // Créer une particule toutes les 3 secondes
-        setInterval(createParticle, 3000);
-
-        // Smooth scroll pour les ancres (si vous en ajoutez)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        // Smooth scroll pour les ancres
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
             });
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', async () => {
+            await chargerDonnees();
+            initAnimations();
+            initSmoothScroll();
+            
+            // Créer une particule toutes les 3 secondes
+            setInterval(createParticle, 3000);
         });
     </script>
 </body>
