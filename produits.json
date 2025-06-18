@@ -1,6 +1,6 @@
 {
   "siteInfo": {
-    "titre": "CLEM Pro",
+    "titre": "CLEM Provence",
     "sousTitre": "Découvrez les outils et services que j'utilise au quotidien et que je recommande à ma communauté. Chaque lien a été soigneusement sélectionné pour sa qualité et son utilité.",
     "stats": {
       "outils": "25+",
@@ -10,7 +10,7 @@
   },
   "categories": {
     "clemtech": {
-      "nom": "CLEM Tech",
+      "nom": "CLEM T",
       "icone": "⚡",
       "produits": {
         "adaptateur-usbc": {
